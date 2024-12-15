@@ -31,7 +31,7 @@ const Countries = () => {
         fetch(API_URL)
         .then((res) => res.json())
         .then((data) => setCountries(data))
-        .catch((error) => console.error("Error Fetching the API."));
+        .catch((error) => console.error("Error fetching data:", error));
     },[]);
     return(
         <div

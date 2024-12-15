@@ -24,7 +24,7 @@ function CountriesCard ({name,flag}) {
     );
 }
 const Countries = () => {
-    const API_URL = 'https://xcountriesapi.onrender.com/all';
+    const API_URL = 'https://xcountries-backend.azurewebsites.net/all';
     const [countries , setCountries] =  useState([]);
     useEffect(() => {
         fetch(API_URL)
